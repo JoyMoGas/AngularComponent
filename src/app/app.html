@@ -1,0 +1,22 @@
+<main class="contenido">
+  <router-outlet />
+
+  <div class="formulario">
+    <h2>Crear nueva tarjeta</h2>
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" #nombreInput placeholder="Ej. Ana">
+    </div>
+    <div class="form-group">
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" #edadInput placeholder="Ej. 28">
+    </div>
+    <button (click)="agregarTarjeta(nombreInput.value, edadInput.value); nombreInput.value=''; edadInput.value=''">Agregar</button>
+  </div>
+
+  <section class="tarjetas-grid">
+    @for (tarjeta of tarjetas(); track $index) {
+      <app-tarjeta [nombre]="tarjeta.nombre" [edad]="tarjeta.edad"></app-tarjeta>
+    }
+  </section>
+</main>

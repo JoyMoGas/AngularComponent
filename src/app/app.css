@@ -1,0 +1,68 @@
+/* Layout principal color crema */
+.contenido {
+  min-height: 100vh;
+  background-color: #fdfaf6; /* Crema muy claro / hueso */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.formulario {
+  background-color: #fffefb; /* Blanco crema */
+  border: 1px solid #eaddcc;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.formulario h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #555;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formulario button {
+  width: 100%;
+  background-color: #eaddcc; /* Crema oscuro / beige */
+  color: #333;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #d2b48c; /* Beige */
+}
+
+/* Grid para las tarjetas */
+.tarjetas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
