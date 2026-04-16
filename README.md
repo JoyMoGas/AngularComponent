@@ -25,8 +25,6 @@ Here is the application in action:
 ### 2. Displayed Card
 ![Card Display](imgs/card_image.png)
 
-> **Note:** To display the images correctly, make sure to add your screenshots inside the `imgs` folder with the names `form_image.png` and `card_image.png`.
-
 ---
 
 
